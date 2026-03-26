@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - SRM</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header js-header" style="background-color: rgba(10, 10, 10, 0.95); padding: 15px 0; border-bottom: 1px solid var(--glass-border);">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="https://srm.cl/wp-content/uploads/2025/08/srm-black.svg" alt="SRM Logo" class="logo-img">
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="nuestras-marcas.html" class="nav-link">Nuestras Marcas</a></li>
+                    <li><a href="puntos-de-ventas.html" class="nav-link">Puntos de Venta</a></li>
+                    <li><a href="distribucion.html" class="nav-link">Distribución</a></li>
+                    <li><a href="proyectos-e-innovacion.html" class="nav-link">Proyectos e Innovación</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-toggle js-mobile-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu js-mobile-menu">
+        <nav class="mobile-nav">
+            <ul class="mobile-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nuestras-marcas.html">Nuestras Marcas</a></li>
+                <li><a href="puntos-de-ventas.html">Puntos de Venta</a></li>
+                <li><a href="distribucion.html">Distribución</a></li>
+                <li><a href="proyectos-e-innovacion.html">Proyectos e Innovación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Contact Section -->
+    <main>
+        <section class="contact-section">
+            <div class="contact-image reveal parallax-bg" style="background-image: url('https://srm.cl/wp-content/uploads/2025/08/44PROFILE-SRM-1920-x-1320-px.webp');">
+                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.34);"></div>
+                <div style="position: absolute; bottom: 40px; left: 40px; max-width: 400px; color: white;">
+                    <h2 style="font-size: 2.5rem; color: #ffffff; margin-bottom: 10px;">Contáctenos y formemos alianzas comerciales estratégicas.</h2>
+                </div>
+            </div>
+            
+            <div class="contact-content reveal reveal-delay-1">
+                <div style="max-width: 600px; width: 100%;">
+                    <h1 class="split-title" style="margin-bottom: 10px;">Enviar un <span>mensaje</span></h1>
+                    <p style="color: var(--text-secondary); margin-bottom: 40px;">Por favor complete el siguiente formulario y nos pondremos en contacto con usted a la brevedad.</p>
+                    
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre *</label>
+                            <input type="text" id="name" name="name" class="form-control" required placeholder="Su nombre completo">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Correo Electrónico *</label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="su@correo.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" placeholder="¿En qué podemos ayudarle?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large" style="margin-top: 20px; width: 100%;">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col" style="grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 40px;">
+                    <img src="https://srm.cl/wp-content/uploads/2025/08/srm-black.svg" alt="SRM Logo" class="logo-img footer-logo" style="height: 50px;">
+                    <p class="footer-about" style="max-width: 500px;">
+                        SRM S.A. Nació formalmente en la segunda mitad de 2011, pero sus orígenes se remontan a más de veintiocho años de experiencia comercial y financiera.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 - SRM S.A. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
