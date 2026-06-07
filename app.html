@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App DStretch — Análisis de Pictografías · SRM</title>
+    <meta name="description" content="Herramienta profesional para análisis y documentación de arte rupestre. Algoritmo DStretch con filtros avanzados, disponible en cualquier navegador.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="https://srm.cl/wp-content/uploads/2025/08/srm.svg" alt="SRM" class="logo-img">
+            </a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html"                  class="nav-link">Inicio</a></li>
+                    <li><a href="nuestras-marcas.html"        class="nav-link">Nuestras Marcas</a></li>
+                    <li><a href="puntos-de-ventas.html"       class="nav-link">Puntos de Venta</a></li>
+                    <li><a href="distribucion.html"           class="nav-link">Distribución</a></li>
+                    <li><a href="proyectos-e-innovacion.html" class="nav-link">Proyectos e Innovación</a></li>
+                    <li><a href="contacto.html"               class="nav-link">Contacto</a></li>
+                    <li><a href="app.html"                    class="nav-link nav-link-cta active">App</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nuestras-marcas.html">Nuestras Marcas</a></li>
+            <li><a href="puntos-de-ventas.html">Puntos de Venta</a></li>
+            <li><a href="distribucion.html">Distribución</a></li>
+            <li><a href="proyectos-e-innovacion.html">Proyectos e Innovación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="app.html" class="nav-link-cta">App</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero -->
+    <section class="app-hero" id="app-inicio">
+        <div class="app-hero-grid">
+
+            <div class="app-hero-text reveal">
+                <div class="eyebrow">Fundación Paqarina · Herramienta Digital</div>
+                <h1 class="app-hero-title">
+                    Revela el arte<br>rupestre <em>oculto</em>
+                </h1>
+                <p class="app-hero-desc">
+                    Filtro de Pictografías es una aplicación web progresiva que implementa el
+                    algoritmo <strong style="color:rgba(255,255,255,0.75);">DStretch</strong> combinado con filtros avanzados,
+                    permitiendo analizar y documentar sitios arqueológicos directamente desde cualquier navegador,
+                    sin instalación.
+                </p>
+                <div class="app-hero-actions">
+                    <a href="https://filtro-pictografias.netlify.app/"
+                       target="_blank" rel="noopener"
+                       class="btn btn-app-cta">
+                        Usar la Aplicación →
+                    </a>
+                    <a href="#dstretch" class="btn btn-secondary" style="color:rgba(255,255,255,0.6); border-color:rgba(255,255,255,0.2);">
+                        Conocer más
+                    </a>
+                </div>
+
+                <!-- PWA badges -->
+                <div style="display:flex; gap:16px; margin-top:40px; flex-wrap:wrap;">
+                    <span style="display:inline-flex; align-items:center; gap:6px; font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:rgba(255,255,255,0.35);">
+                        <span style="color:var(--gold);">●</span> PWA · Offline
+                    </span>
+                    <span style="display:inline-flex; align-items:center; gap:6px; font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:rgba(255,255,255,0.35);">
+                        <span style="color:var(--gold);">●</span> Sin instalación
+                    </span>
+                    <span style="display:inline-flex; align-items:center; gap:6px; font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:rgba(255,255,255,0.35);">
+                        <span style="color:var(--gold);">●</span> Registro arqueológico
+                    </span>
+                </div>
+            </div>
+
+            <!-- Device mockup -->
+            <div class="app-hero-visual reveal reveal-delay-2">
+                <div class="app-device">
+                    <div class="app-device-bar">
+                        <span class="app-device-dot"></span>
+                        <span class="app-device-dot"></span>
+                        <span class="app-device-dot"></span>
+                        <span class="app-device-url">filtro-pictografias.netlify.app</span>
+                    </div>
+                    <div class="app-device-screen">
+                        <span class="app-device-screen-label">DStretch · Activo</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scroll -->
+        <div class="hero-scroll">
+            <div class="hero-scroll-line"></div>
+            <div class="hero-scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- Qué es DStretch -->
+    <section class="dstretch-section" id="dstretch">
+        <div class="container">
+            <div class="dstretch-inner">
+
+                <div class="dstretch-content reveal">
+                    <div class="eyebrow">El algoritmo</div>
+                    <h2>¿Qué es <em>DStretch</em>?</h2>
+                    <p>
+                        <strong>DStretch</strong> (Decorrelation Stretch) es un algoritmo de procesamiento
+                        de imagen basado en la expansión de correlación de color, desarrollado originalmente
+                        por Jon Harman para el análisis de arte rupestre.
+                    </p>
+                    <p>
+                        Funciona rotando el espacio de color mediante análisis de componentes principales (PCA)
+                        y amplificando las diferencias sutiles entre canales de color, haciendo visibles
+                        pictografías y grabados que el ojo humano no puede distinguir a simple vista.
+                    </p>
+                    <p>
+                        Es la herramienta estándar internacional para documentación de arte rupestre,
+                        utilizada por arqueólogos y patrimonilogos en todo el mundo.
+                    </p>
+                </div>
+
+                <div class="dstretch-steps reveal reveal-delay-1">
+                    <div class="dstretch-step">
+                        <span class="dstretch-step-num">01</span>
+                        <div>
+                            <h4>Análisis PCA del color</h4>
+                            <p>El algoritmo calcula las componentes principales del espacio de color de la imagen, identificando las direcciones de mayor varianza.</p>
+                        </div>
+                    </div>
+                    <div class="dstretch-step">
+                        <span class="dstretch-step-num">02</span>
+                        <div>
+                            <h4>Rotación de espacio cromático</h4>
+                            <p>Los canales de color son rotados y alineados con los ejes de mayor varianza, maximizando el contraste entre pigmentos y roca.</p>
+                        </div>
+                    </div>
+                    <div class="dstretch-step">
+                        <span class="dstretch-step-num">03</span>
+                        <div>
+                            <h4>Expansión de contraste</h4>
+                            <p>Los valores resultantes son expandidos al rango completo (0–255), amplificando diferencias imperceptibles para hacerlas visibles.</p>
+                        </div>
+                    </div>
+                    <div class="dstretch-step">
+                        <span class="dstretch-step-num">04</span>
+                        <div>
+                            <h4>Filtros avanzados combinados</h4>
+                            <p>La implementación de Guillermo Urra añade filtros adicionales (YBK, LDS, LYQ y otros) que permiten análisis en distintos rangos espectrales.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="app-features" id="caracteristicas">
+        <div class="container">
+            <div class="reveal">
+                <div class="eyebrow" style="justify-content:center;">Características</div>
+                <h2 class="section-title" style="text-align:center; margin-top:8px;">Una herramienta diseñada<br>para el <em>campo y el laboratorio</em></h2>
+            </div>
+
+            <div class="app-features-grid">
+
+                <div class="app-feature-card reveal">
+                    <span class="app-feature-icon">🌐</span>
+                    <h3>100% Web · Sin instalación</h3>
+                    <p>Funciona en cualquier navegador moderno — Chrome, Firefox, Safari, Edge. No requiere descarga ni instalación. Accede desde tu teléfono en campo o desde el computador en laboratorio.</p>
+                </div>
+
+                <div class="app-feature-card reveal reveal-delay-1">
+                    <span class="app-feature-icon">📶</span>
+                    <h3>Progressive Web App · Offline</h3>
+                    <p>Puede instalarse como aplicación nativa en tu dispositivo y funcionar completamente sin conexión a internet. Ideal para sitios arqueológicos remotos sin cobertura de red.</p>
+                </div>
+
+                <div class="app-feature-card reveal reveal-delay-2">
+                    <span class="app-feature-icon">🎨</span>
+                    <h3>Múltiples filtros DStretch</h3>
+                    <p>Incluye los filtros YBK, LDS, LYQ, YRD, CYB y más — cada uno optimizado para distintos tipos de pigmentos y condiciones de iluminación de la roca soporte.</p>
+                </div>
+
+                <div class="app-feature-card reveal">
+                    <span class="app-feature-icon">📍</span>
+                    <h3>Registro de metadatos GPS</h3>
+                    <p>Captura automáticamente coordenadas GPS, fecha, hora y condiciones del sitio. Genera registros estructurados que se integran directamente en fichas de catalogación arqueológica.</p>
+                </div>
+
+                <div class="app-feature-card reveal reveal-delay-1">
+                    <span class="app-feature-icon">📋</span>
+                    <h3>Documentación patrimonial integral</h3>
+                    <p>Registra y exporta los datos junto con las imágenes procesadas. Proporciona una base integral del patrimonio cultural, facilitando la protección y divulgación de los sitios.</p>
+                </div>
+
+                <div class="app-feature-card reveal reveal-delay-2">
+                    <span class="app-feature-icon">📤</span>
+                    <h3>Exportación y compartir</h3>
+                    <p>Descarga las imágenes procesadas en alta resolución con sus metadatos. Comparte resultados directamente desde el navegador con el equipo de investigación.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer -->
+    <section class="app-developer" id="desarrollador">
+        <div class="container">
+            <div class="app-developer-inner">
+
+                <div class="reveal">
+                    <div class="dev-label">Desarrollador</div>
+                    <h2 style="color:#fff;">Guillermo Urra<br><em>Bustamante</em></h2>
+                    <p>
+                        Analista y desarrollador de aplicaciones web con especialización en herramientas
+                        tecnológicas aplicadas a la investigación arqueológica y patrimonial.
+                    </p>
+                    <p>
+                        Presidente de la <strong style="color:rgba(255,255,255,0.7);">Fundación Paqarina</strong>,
+                        dedicada a la investigación, documentación y protección del patrimonio cultural
+                        arqueológico del norte de Chile.
+                    </p>
+                    <p>
+                        Esta herramienta nace de años de trabajo en terreno junto a arqueólogos, con el objetivo
+                        de democratizar el acceso a técnicas de análisis de imagen profesionales sin necesidad
+                        de software especializado costoso.
+                    </p>
+                    <div style="margin-top:40px;">
+                        <a href="https://filtro-pictografias.netlify.app/"
+                           target="_blank" rel="noopener"
+                           class="btn btn-primary">
+                            Acceder a la App
+                        </a>
+                    </div>
+                </div>
+
+                <div class="app-dev-cards reveal reveal-delay-1">
+                    <div class="app-dev-card">
+                        <span class="app-dev-card-icon">🏛️</span>
+                        <h4>Fundación Paqarina</h4>
+                        <p>Investigación y protección del patrimonio arqueológico del norte de Chile.</p>
+                    </div>
+                    <div class="app-dev-card">
+                        <span class="app-dev-card-icon">💻</span>
+                        <h4>Desarrollo Web</h4>
+                        <p>Aplicaciones web progresivas orientadas a la investigación científica y patrimonial.</p>
+                    </div>
+                    <div class="app-dev-card">
+                        <span class="app-dev-card-icon">🎨</span>
+                        <h4>DStretch Avanzado</h4>
+                        <p>Implementación propia del algoritmo con filtros adicionales desarrollados en campo.</p>
+                    </div>
+                    <div class="app-dev-card">
+                        <span class="app-dev-card-icon">🗺️</span>
+                        <h4>Norte de Chile</h4>
+                        <p>Décadas de documentación en Atacama, Tarapacá y Antofagasta con tecnología de vanguardia.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="app-cta-section">
+        <div class="reveal">
+            <div class="eyebrow" style="justify-content:center; color:var(--gold);">Acceso libre y gratuito</div>
+            <h2 style="margin-top:8px;">Comienza a revelar<br><em>lo invisible</em></h2>
+            <p>
+                Disponible para investigadores, arqueólogos, estudiantes y comunidades.
+                Sin registro. Sin costo. Directamente en tu navegador.
+            </p>
+            <a href="https://filtro-pictografias.netlify.app/"
+               target="_blank" rel="noopener"
+               class="btn btn-app-cta">
+                Abrir Filtro de Pictografías →
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col reveal">
+                <a href="index.html" class="footer-logo">
+                    <img src="https://srm.cl/wp-content/uploads/2025/08/srm.svg" alt="SRM" class="logo-img">
+                </a>
+                <p class="footer-about">Herramienta desarrollada por Guillermo Urra Bustamante · Fundación Paqarina.</p>
+            </div>
+            <div class="footer-col reveal reveal-delay-1">
+                <h4>La App</h4>
+                <ul>
+                    <li><a href="#dstretch">¿Qué es DStretch?</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#desarrollador">Desarrollador</a></li>
+                    <li><a href="https://filtro-pictografias.netlify.app/" target="_blank">Usar ahora</a></li>
+                </ul>
+            </div>
+            <div class="footer-col reveal reveal-delay-2">
+                <h4>Contacto</h4>
+                <p>Fundación Paqarina</p>
+                <p>Norte de Chile</p>
+                <p><a href="contacto.html">Enviar mensaje</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Guillermo Urra Bustamante · Fundación Paqarina. Todos los derechos reservados.</p>
+            <p style="font-size:0.68rem; letter-spacing:0.15em; color:rgba(255,255,255,0.12);">FILTRO-PICTOGRAFIAS · PWA · DSTRETCH</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
